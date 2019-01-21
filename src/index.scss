@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+img {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.logo {
+  width: 180px;
+  height: 100%;
+}
+
+.pic {
+  width: 100%;
+  height: auto;
+}
+
+.projectpic {
+  width: 140%;
+  height: auto;
+}
+
+.contactpic {
+  width: 120%;
+  height: auto;
+}
+
+.navbar-burger {
+  background: transparent;
+  border: none;
+}
