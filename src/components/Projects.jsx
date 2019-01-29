@@ -16,7 +16,7 @@ class Projects extends Component {
         </div>
         <div className="column is-6 is-offset-1">
           <div className="column">
-            <h2>Projects</h2>
+            <h2 class="subtitle is-3">Projects</h2>
           </div>
         </div>
       </div>

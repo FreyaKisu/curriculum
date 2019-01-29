@@ -18,9 +18,28 @@ img {
   border: 1px solid #ccc;
 }
 
-.logo {
+figcaption {
+  color: #1f4df4 !important;
+}
+
+figcaption:hover {
+  color: #4066f0;
+}
+
+ul {
+  text-align: left;
+  li {
+    list-style-type: circle;
+  }
+}
+
+#logo {
   width: 180px;
   height: 100%;
+}
+
+#logo:hover {
+  opacity: 0.8;
 }
 
 .pic {
@@ -41,4 +60,24 @@ img {
 .navbar-burger {
   background: transparent;
   border: none;
+}
+
+#onlineCV {
+  color: #1dad7d;
+}
+
+#onlineCV:hover {
+  color: #03865b;
+}
+
+#name {
+  color: #0b8f69;
+}
+
+#title {
+  color: #218ce4;
+}
+
+.isActive {
+  color: #0b8f69;
 }

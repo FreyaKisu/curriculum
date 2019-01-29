@@ -15,10 +15,12 @@ class AboutMe extends Component {
           </figure>
         </div>
         <div className="column is-6 is-offset-1">
-          <h2>
-            Edit Orosz - Software Development student | junior software
-            developer
+          <h2 id="name" className="subtitle is-3">
+            Edit Orosz
           </h2>
+          <h3 id="title" className="subtitle is-4">
+            Software Developer student
+          </h3>
           <br />
           <section>
             I have been living and studying in three countries so far starting

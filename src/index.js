@@ -21,7 +21,7 @@ const allReducers = combineReducers({
         return state;
     }
   },
-  cvTitle: function(state = "", { type, newText }) {
+  cvDownload: function(state = "", { type, newText }) {
     return state;
   }
 });
@@ -39,7 +39,8 @@ const store = createStore(
     ],
     string1: "Stored string"
 */
-    cvTitle: "click for CV "
+    cvDownload: "Download my CV ",
+    onlineCV: "Read my CV online"
   },
   window.devToolsExtension && window.devToolsExtension()
 );

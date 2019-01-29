@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { withRouter } from "react-router";
-import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 
 import { connect } from "react-redux"; // this is how we connect this component to store
 
@@ -19,6 +18,10 @@ class App extends Component {
     super(props);
     this.state = { menu: 0 };
   }
+
+  getNavLinkClass = () => {
+    console.log(window.location.hash);
+  };
 
   toggleNav = () => {
     console.log(this.state);
@@ -46,13 +49,30 @@ class App extends Component {
                     <a
                       href="./documents/Resume2018_EditOrosz"
                       download="EditOrosz_CV"
+                      id="logo"
                     >
-                      <img src={logo} className="logo" alt={"logo"} />
+                      <img src={logo} alt={"logo"} />
+                      <h3 className="navbar-item">
+                        {this.props.store.cvDownload}
+                      </h3>
                     </a>
-                    <h1 className="navbar-item">{this.props.store.cvTitle}</h1>
+                    <a
+                      className=""
+                      href="http://myy.haaga-helia.fi/~a1703056/Edit%20Orosz%20CV%202019/Edit%20Orosz%20CV.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h1 id="onlineCV" className="navbar-item">
+                        Check my CV online
+                      </h1>
+                    </a>
                     <button
                       onClick={this.toggleNav}
-                      className="navbar-burger burger"
+                      className={
+                        this.state.menu
+                          ? "navbar-burger burger is-active"
+                          : "navbar-burger burger"
+                      }
                       data-target="navbarMenu"
                     >
                       <span />
@@ -70,16 +90,25 @@ class App extends Component {
                       <div className="tabs is-right">
                         <ul>
                           <li>
-                            <Link to="/">About me</Link>
+                            <NavLink to="/">About me</NavLink>
+                          </li>
+                          <li className={this.getNavLinkClass("/Skills")}>
+                            <NavLink activeClassName="is-active" to="/Skills">
+                              Skills
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/Skills">Skills</Link>
+                            <NavLink activeClassName="is-active" to="/Projects">
+                              Projects
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/Projects">Projects</Link>
-                          </li>
-                          <li>
-                            <Link to="/contact-me">Contact me</Link>
+                            <NavLink
+                              activeClassName="is-active"
+                              to="/contact-me"
+                            >
+                              Contact me
+                            </NavLink>
                           </li>
                         </ul>
                       </div>
@@ -107,6 +136,7 @@ class App extends Component {
                       <a
                         href="https://www.linkedin.com/in/the-mighty-dev-apprentice/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <img
                           src={linkedin}
@@ -119,6 +149,7 @@ class App extends Component {
                       <a
                         href="https://github.com/FreyaNoir?tab=repositories"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <img
                           src={github}
