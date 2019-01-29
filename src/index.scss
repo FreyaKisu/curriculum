@@ -18,14 +18,6 @@ img {
   border: 1px solid #ccc;
 }
 
-figcaption {
-  color: #1f4df4 !important;
-}
-
-figcaption:hover {
-  color: #4066f0;
-}
-
 ul {
   text-align: left;
   li {
@@ -76,6 +68,18 @@ ul {
 
 #title {
   color: #218ce4;
+}
+
+#skills {
+  color: #218ce4;
+}
+
+#projects {
+  color: #03865b;
+}
+
+#contact {
+  color: #113dff;
 }
 
 .isActive {

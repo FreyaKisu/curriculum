@@ -10,7 +10,9 @@ class Skills extends Component {
     return (
       <div className="columns is-vcentered">
         <div className="column is-6 is-offset-1">
-          <h2 class="subtitle is-3">Skills</h2>
+          <h2 id="skills" className="subtitle is-3">
+            Skills
+          </h2>
           <br />
           <section>
             <ul>
