@@ -70,7 +70,7 @@ class App extends Component {
                       onClick={this.toggleNav}
                       className={
                         this.state.menu
-                          ? "navbar-burger burger is-active"
+                          ? "navbar-burger burger navActive"
                           : "navbar-burger burger"
                       }
                       data-target="navbarMenu"
@@ -83,7 +83,7 @@ class App extends Component {
                   <div
                     id="navbarMenu"
                     className={
-                      this.state.menu ? "navbar-menu is-active" : "navbar-menu"
+                      this.state.menu ? "navbar-menu navActive" : "navbar-menu"
                     }
                   >
                     <nav className="navbar-end">
@@ -93,18 +93,18 @@ class App extends Component {
                             <NavLink to="/">About me</NavLink>
                           </li>
                           <li className={this.getNavLinkClass("/Skills")}>
-                            <NavLink activeClassName="is-active" to="/Skills">
+                            <NavLink activeClassName="navActive" to="/Skills">
                               Skills
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink activeClassName="is-active" to="/Projects">
+                            <NavLink activeClassName="navActive" to="/Projects">
                               Projects
                             </NavLink>
                           </li>
                           <li>
                             <NavLink
-                              activeClassName="is-active"
+                              activeClassName="navActive"
                               to="/contact-me"
                             >
                               Contact me
