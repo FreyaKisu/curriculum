@@ -17,11 +17,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { menu: 0 };
+    window.addEventListener(
+      "hashchange",
+      () => {
+        this.setState({
+          menu: 0
+        });
+      },
+      false
+    );
   }
-
-  getNavLinkClass = () => {
-    console.log(window.location.hash);
-  };
 
   toggleNav = () => {
     console.log(this.state);
@@ -42,7 +47,9 @@ class App extends Component {
       <Router>
         <div>
           <section className="hero is-fullheight is-default is-bold">
-            <div className="hero-head">
+            <div
+              className={this.state.menu ? "hero-head is-active" : "hero-head"}
+            >
               <nav className="navbar">
                 <div className="container">
                   <div className="navbar-brand">
@@ -70,7 +77,7 @@ class App extends Component {
                       onClick={this.toggleNav}
                       className={
                         this.state.menu
-                          ? "navbar-burger burger navActive"
+                          ? "navbar-burger burger is-active"
                           : "navbar-burger burger"
                       }
                       data-target="navbarMenu"
@@ -83,16 +90,18 @@ class App extends Component {
                   <div
                     id="navbarMenu"
                     className={
-                      this.state.menu ? "navbar-menu navActive" : "navbar-menu"
+                      this.state.menu ? "navbar-menu is-active" : "navbar-menu"
                     }
                   >
                     <nav className="navbar-end">
                       <div className="tabs is-right">
                         <ul>
                           <li>
-                            <NavLink to="/">About me</NavLink>
+                            <NavLink exact activeClassName="navActive" to="/">
+                              About me
+                            </NavLink>
                           </li>
-                          <li className={this.getNavLinkClass("/Skills")}>
+                          <li>
                             <NavLink activeClassName="navActive" to="/Skills">
                               Skills
                             </NavLink>

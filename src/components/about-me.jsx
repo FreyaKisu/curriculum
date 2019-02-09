@@ -30,12 +30,12 @@ class AboutMe extends Component {
             could already develop proven problem-solving, and creative-thinking,
             team working skills. I learn more and more every day and since it is
             my passion, I develop and widen my knowledge outside of the school
-            as well with
+            as well with &nbsp;
             <a href="https://weather-observation-app.herokuapp.com/">
               working on own projects
             </a>
             , visiting to tech events, participating on hackathons (Junktion
-            2017-2018, Junktion sTuPiD hAcK2018) and
+            2017-2018, Junktion sTuPiD hAcK2018) and &nbsp;
             <a href="http://myy.haaga-helia.fi/~a1703056/Fujitsu%20Innovation%20Award_Finalist%20Certificate_Edit%20Orosz.pdf">
               innovation challenges
             </a>
