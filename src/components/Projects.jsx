@@ -9,7 +9,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="columns is-vcentered">
-        <div className="column is-5">
+        <div className="column is-5 is-horizontal-center">
           <figure className="projectpic">
             <img src={projects} alt={"Projects"} />
           </figure>

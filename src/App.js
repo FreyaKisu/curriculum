@@ -130,9 +130,9 @@ class App extends Component {
               <div className="container has-text-centered">
                 <Switch>
                   <Route exact path="/" component={AboutMe} />
-                  <Route exact path="/Skills" component={Skills} />
-                  <Route exact path="/Projects" component={Projects} />
-                  <Route exact path="/contact-me" component={ContactMe} />
+                  <Route path="/Skills" component={Skills} />
+                  <Route path="/Projects" component={Projects} />
+                  <Route path="/contact-me" component={ContactMe} />
                 </Switch>
               </div>
             </div>
