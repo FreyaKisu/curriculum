@@ -19,7 +19,7 @@ class AboutMe extends Component {
             Edit Orosz
           </h2>
           <h3 id="title" className="subtitle is-4">
-            Software Developer student
+            Software Developer Student
           </h3>
           <br />
           <section>
@@ -34,8 +34,8 @@ class AboutMe extends Component {
             <a href="https://weather-observation-app.herokuapp.com/">
               working on own projects
             </a>
-            , visiting to tech events, participating on hackathons (Junktion
-            2017-2018, Junktion sTuPiD hAcK2018) and &nbsp;
+            , visiting to tech events, participating on hackathons (Junction
+            2017-2018, Junction sTuPiD hAcK2018) and &nbsp;
             <a href="http://myy.haaga-helia.fi/~a1703056/Fujitsu%20Innovation%20Award_Finalist%20Certificate_Edit%20Orosz.pdf">
               innovation challenges
             </a>
