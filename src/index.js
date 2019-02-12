@@ -39,8 +39,8 @@ const store = createStore(
     ],
     string1: "Stored string"
 */
-    cvDownload: "Download my CV ",
-    onlineCV: "Read my CV online"
+    cvDownload: "Download "
+    //onlineCV: "Read my CV online"
   },
   window.devToolsExtension && window.devToolsExtension()
 );

@@ -1,4 +1,11 @@
+$darkgrey: #2c2635;
+$lightgrey: #c7c7c7;
+$blue: #6369d1;
+$green: #3bedba;
+
 body {
+  background-color: $darkgrey;
+  color: #d8d8d8 !important;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,10 +22,16 @@ code {
 
 img {
   padding: 5px;
-  border: 1px solid #ccc;
+  border: none;
+  //box-shadow: inset 0px 0px 40px 40px $darkgrey !important;
+}
+.tabs a {
+  color: $lightgrey !important;
 }
 
-ul {
+ul,
+.navbar-burger {
+  color: !important;
   text-align: left;
   li {
     list-style-type: circle;
@@ -28,10 +41,11 @@ ul {
 #logo {
   width: 180px;
   height: 100%;
+  opacity: 0.8;
 }
 
 #logo:hover {
-  opacity: 0.8;
+  opacity: 0.65;
 }
 
 .pic {
@@ -64,43 +78,49 @@ ul {
   border: none;
 }
 
+.navbar-item,
+.navbar-link {
+  color: $lightgrey !important;
+}
+
 #onlineCV {
-  color: #1dad7d;
+  color: $green !important;
 }
 
 #onlineCV:hover {
-  color: #03865b;
+  color: #e96a70 !important;
 }
 
 #name {
-  color: #0b8f69;
+  color: $green;
 }
 
 #title {
-  color: #218ce4;
+  color: $blue;
 }
 
 #skills {
-  color: #218ce4;
+  color: $blue;
 }
 
 #projects {
-  color: #03865b;
+  color: $green;
 }
 
 #contact {
-  color: #113dff;
+  color: $blue;
 }
 
 .tabs {
   a {
     &.navActive {
-      color: #0b8f69;
-      border-bottom-color: #3273dc;
+      color: $green !important;
+      border-bottom-color: $blue;
     }
     &:hover,
     &:active {
-      color: #3273dc;
+      color: #d8656f !important;
+      border-bottom-color: #8d2c34 !important;
     }
   }
 }
@@ -113,7 +133,8 @@ ul {
       left: 0px;
       width: 100%;
       height: 100%;
-      background: #fff;
+      background: $lightgrey;
+      color: $darkgrey;
       z-index: 10000;
       .tabs ul {
         display: block;

@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactMe from "./components/contact-me";
 
-import logo from "./img/logo.jpg";
+import logo from "./img/logo.png";
 import linkedin from "./img/linkedin.png";
 import github from "./img/Octocat/Octocat.jpg";
 

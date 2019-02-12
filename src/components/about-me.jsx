@@ -23,18 +23,17 @@ class AboutMe extends Component {
           </h3>
           <br />
           <section>
-            I have been living and studying in three countries so far starting
-            from Hungary, through Austria, ending up in Finland. I am a
-            proactive and enthusiastic student of Business Information
-            Technology in Haaga-Helia University of Applied Sciences, where I
-            could already develop proven problem-solving, and creative-thinking,
-            team working skills. I learn more and more every day and since it is
-            my passion, I develop and widen my knowledge outside of the school
-            as well with &nbsp;
+            I've been living and studying in three countries so far, starting
+            from Hungary, through Austria, ending up in Finland. I'm a proactive
+            and enthusiastic student of Business Information Technology in
+            Haaga-Helia University of Applied Sciences, where I could develop
+            proven problem-solving, and creative-thinking, team working skills.
+            I learn more and more every day and since it's my passion, I develop
+            and widen my knowledge outside of the school as well with &nbsp;
             <a href="https://weather-observation-app.herokuapp.com/">
               working on own projects
             </a>
-            , visiting to tech events, participating on hackathons (Junction
+            , visiting to tech events, participating in hackathons (Junction
             2017-2018, Junction sTuPiD hAcK2018) and &nbsp;
             <a href="http://myy.haaga-helia.fi/~a1703056/Fujitsu%20Innovation%20Award_Finalist%20Certificate_Edit%20Orosz.pdf">
               innovation challenges
