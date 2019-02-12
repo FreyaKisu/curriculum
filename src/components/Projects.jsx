@@ -14,7 +14,7 @@ class Projects extends Component {
             <img src={projects} alt={"Projects"} />
           </figure>
         </div>
-        <div className="column is-6 is-offset-1">
+        <div className="column is-4 is-offset-2">
           <div className="column">
             <h2 id="projects" className="subtitle is-3">
               Projects
