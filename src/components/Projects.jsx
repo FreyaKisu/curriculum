@@ -21,7 +21,7 @@ class Projects extends Component {
             </h2>
             <p>
               Under progress, come back later for updated Projects info. Until
-              then, take a look at mey GitHub repo. :)
+              then, take a look at my GitHub repo. :)
             </p>
           </div>
         </div>
