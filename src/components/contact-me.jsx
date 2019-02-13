@@ -10,12 +10,12 @@ class ContactMe extends Component {
   render() {
     return (
       <div className="columns is-vcentered">
-        <div className="column is-5">
-          <figure className="contactpic">
+        <div className="column is-7 is-horizontal-center">
+          <figure>
             <img src={contact} alt={"Contact"} />
           </figure>
         </div>
-        <div className="column is-6 is-offset-1">
+        <div className="column is-5 is-horizontal-center">
           <div className="column">
             <h3 id="contact" className="subtitle is-3">
               Personal contacts:

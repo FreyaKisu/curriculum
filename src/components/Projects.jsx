@@ -9,12 +9,12 @@ class Projects extends Component {
   render() {
     return (
       <div className="columns is-vcentered">
-        <div className="column is-5 is-horizontal-center">
-          <figure className="projectpic">
+        <div className="column is-7 is-horizontal-center">
+          <figure>
             <img src={projects} alt={"Projects"} />
           </figure>
         </div>
-        <div className="column is-4 is-offset-2">
+        <div className="column is-5 is-horizontal-center">
           <div className="column">
             <h2 id="projects" className="subtitle is-3">
               Projects

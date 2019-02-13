@@ -9,16 +9,16 @@ class AboutMe extends Component {
   render() {
     return (
       <div className="columns is-vcentered">
-        <div className="column is-4">
+        <div className="column is-5">
           <figure className="pic">
             <img src={profilePic} alt={"ProfilePic"} />
           </figure>
         </div>
-        <div className="column is-6 is-offset-1">
+        <div className="column is-5 is-offset-1 is-horizontal-center">
           <h2 id="name" className="subtitle is-3">
             Edit Orosz
           </h2>
-          <h3 id="title" className="subtitle is-4">
+          <h3 id="title" className="subtitle is-4 is-horizontal-center">
             Software Developer Student
           </h3>
           <br />

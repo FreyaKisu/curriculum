@@ -8,7 +8,7 @@ class Skills extends Component {
   }
   render() {
     return (
-      <div className="columns is-vcentered">
+      <div className="columns is-vcentered is-horizontal-center">
         <div className="column is-6 is-offset-1">
           <h2 id="skills" className="subtitle is-3">
             Skills
@@ -48,7 +48,7 @@ class Skills extends Component {
             </ul>
           </section>
         </div>
-        <div className="column is-4">
+        <div className="column is-4 is-horizontal-center">
           <figure className="pic">
             <img src={codeCat} alt={"CodingCat"} />
           </figure>

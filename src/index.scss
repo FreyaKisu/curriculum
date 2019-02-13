@@ -62,20 +62,16 @@ ul,
   height: auto;
 }
 
-.projectpic {
-  width: 140%;
-  height: auto;
-}
-
-.contactpic {
-  width: 120%;
-  height: auto;
-}
-
 @media all and (max-width: 480px) {
-  .pic,
-  .contactpic,
-  .projectpic {
+  .pic {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 641px) {
+  .pic {
     width: 100%;
     display: block;
     margin: 0 auto;
