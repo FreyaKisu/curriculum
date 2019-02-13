@@ -9,7 +9,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="columns is-vcentered is-horizontal-center">
-        <div className="column is-6 is-offset-1">
+        <div id="text" className="column is-6 is-offset-1">
           <h2 id="skills" className="subtitle is-3">
             Skills
           </h2>

@@ -15,7 +15,7 @@ class ContactMe extends Component {
             <img src={contact} alt={"Contact"} />
           </figure>
         </div>
-        <div className="column is-5 is-horizontal-center">
+        <div id="text" className="column is-5 is-horizontal-center">
           <div className="column">
             <h3 id="contact" className="subtitle is-3">
               Personal contacts:

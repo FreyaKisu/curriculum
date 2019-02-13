@@ -14,7 +14,7 @@ class AboutMe extends Component {
             <img src={profilePic} alt={"ProfilePic"} />
           </figure>
         </div>
-        <div className="column is-5 is-offset-1 is-horizontal-center">
+        <div id="text" className="column is-5 is-offset-1 is-horizontal-center">
           <h2 id="name" className="subtitle is-3">
             Edit Orosz
           </h2>
