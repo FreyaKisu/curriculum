@@ -37,6 +37,15 @@ ul,
     list-style-type: circle;
   }
 }
+.navbar-burger.is-active span:nth-child(3) {
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-5px) rotate(-45deg);
+  color: $darkgrey;
+}
+
+.navbar-burger.is-active span:nth-child(1) {
+  color: $darkgrey;
+}
 
 #logo {
   width: 180px;
