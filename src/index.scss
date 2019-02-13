@@ -147,3 +147,48 @@ ul,
     }
   }
 }
+
+@keyframes twist-and-shrink {
+  0% {
+    /* half the size */
+    width: 120%;
+    height: 120%;
+    transform: rotate(25deg);
+  }
+  20% {
+    transform: rotate(-25deg);
+  }
+  40% {
+    transform: rotate(25deg);
+  }
+  50% {
+    /* the original size */
+    width: 140px;
+    height: 140px;
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  80% {
+    transform: rotate(25deg);
+  }
+  100% {
+    /* half the size */
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.animated-img {
+  animation-name: twist-and-shrink;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-fill-mode: forwards;
+}
+.img-wrapper {
+  width: 150px;
+  margin-left: 30px;
+  height: 120px;
+}

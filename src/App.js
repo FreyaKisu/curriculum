@@ -58,7 +58,9 @@ class App extends Component {
                       download="EditOrosz_CV"
                       id="logo"
                     >
-                      <img src={logo} alt={"logo"} />
+                      <div class="img-wrapper">
+                        <img src={logo} alt={"logo"} className="animated-img" />
+                      </div>
                       <h3 className="navbar-item">
                         {this.props.store.cvDownload}
                       </h3>
