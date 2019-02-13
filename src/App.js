@@ -54,7 +54,7 @@ class App extends Component {
                 <div className="container">
                   <div className="navbar-brand">
                     <a
-                      href="./documents/Resume2018_EditOrosz"
+                      href="./documents/Resume2019_EditOrosz"
                       download="EditOrosz_CV"
                       id="logo"
                     >
