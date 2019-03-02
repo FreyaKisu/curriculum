@@ -53,18 +53,19 @@ class App extends Component {
               <nav className="navbar">
                 <div className="container">
                   <div className="navbar-brand">
-                    <a
-                      href="./documents/Resume2019_EditOrosz"
-                      download="EditOrosz_CV"
-                      id="logo"
-                    >
-                      <div class="img-wrapper">
-                        <img src={logo} alt={"logo"} className="animated-img" />
-                      </div>
-                      <h3 className="navbar-item">
-                        {this.props.store.cvDownload}
-                      </h3>
-                    </a>
+                    <div class="img-wrapper">
+                      <a
+                        href="./documents/Resume2019_EditOrosz.pdf"
+                        download="EditOrosz_CV"
+                        id="logo"
+                      >
+                        <img src={logo} alt={"logo"} className="animated-img" />{" "}
+                      </a>
+                    </div>
+                    <h3 className="navbar-item">
+                      {this.props.store.cvDownload}
+                    </h3>
+
                     <a
                       className=""
                       href="http://myy.haaga-helia.fi/~a1703056/Edit%20Orosz%20CV%202019/Edit%20Orosz%20CV.html"
